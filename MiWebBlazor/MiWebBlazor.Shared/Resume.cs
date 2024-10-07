@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace MiWebBlazor.Shared
 {
-    class Resume
+    public class Resume
     {
         public int Id { get; set; }
         public string? Sumary { get; set; }
+        public Person Myperson { get; set; } = new Person();
+        public List<Skill> Skills { get; set; } = new List<Skill>();
+
     }
 }

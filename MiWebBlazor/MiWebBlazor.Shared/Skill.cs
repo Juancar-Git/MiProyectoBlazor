@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace MiWebBlazor.Shared
 {
-    public class Skill
+    public class Skill: ICloneable
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
-        public int Percentage { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int? Percentage { get; set; }
+        public Resume? Resume { get; set; }
+        public int ResumeId { get; set; }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

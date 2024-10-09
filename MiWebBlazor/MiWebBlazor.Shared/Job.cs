@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace MiWebBlazor.Shared
 {
-    public class Job
+    public class Job: ICloneable
     {
         public int Id { get; set; }
-        public string? Description { get; set; }
-        public string? Company { get; set; }
-        public Address? MyAddress { get; set; }
-        public List<Avhievement> MyProperty { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public string Company { get; set; } = string.Empty;
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public Location? Location { get; set; }
+        public int LocationId { get; set; }
+        public Resume? Resume { get; set; }
+        public int ResumeId { get; set; }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone(); 
+        }
     }
 }

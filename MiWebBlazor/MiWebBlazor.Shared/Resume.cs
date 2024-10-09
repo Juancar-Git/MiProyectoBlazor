@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace MiWebBlazor.Shared
 {
-    public class Resume
+    public class Resume: ICloneable
     {
         public int Id { get; set; }
-        public string? Sumary { get; set; }
-        public Person Myperson { get; set; } = new Person();
-        public List<Skill> Skills { get; set; } = new List<Skill>();
+        public string Sumary { get; set; } = string.Empty;
 
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

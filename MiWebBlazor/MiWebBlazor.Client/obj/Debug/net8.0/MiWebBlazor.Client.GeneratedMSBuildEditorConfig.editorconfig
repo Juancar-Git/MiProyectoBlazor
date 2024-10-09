@@ -34,8 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXJDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Components/MainHomeComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluSG9tZUNvbXBvbmVudC5yYXpvcg==
+[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/ContactPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/Counter.razor]
@@ -44,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/ResumePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdW1lUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/Weather.razor]

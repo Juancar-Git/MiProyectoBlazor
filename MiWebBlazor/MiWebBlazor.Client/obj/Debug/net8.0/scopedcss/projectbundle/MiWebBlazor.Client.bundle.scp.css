@@ -48,10 +48,6 @@ main[b-6tbozwhwok] {
 }
 
 @media (min-width: 641px) {
-    .page[b-6tbozwhwok] {
-        flex-direction: row;
-    }
-
     .sidebar[b-6tbozwhwok] {
         width: 250px;
         height: 100vh;

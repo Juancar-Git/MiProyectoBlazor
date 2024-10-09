@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4kBrAFcIYu6XzCNJPWnsJFDFxNLQvE5IRGlTcvFiBmM=",
+  "Source": "MiWebBlazor.Server",
+  "BasePath": "_content/MiWebBlazor.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

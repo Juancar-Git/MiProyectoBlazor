@@ -28,10 +28,10 @@ namespace MiWebBlazor.Server.Controllers
 
 
         [HttpGet]
-        [Route("{id}")]
-        public async Task<ActionResult<List<Achievement>>> GetSingleAchievement(int id)
+        [Route("{jobId}")]
+        public async Task<ActionResult<List<Achievement>>> GetSingleAchievement(int jobId)
         {
-            var miobjeto = await _context.Achievements.FirstOrDefaultAsync(ob => ob.Id == id);
+            var miobjeto = await _context.Achievements.FirstOrDefaultAsync(ob => ob.JobId == jobId);
             if (miobjeto == null)
             {
                 return NotFound(" :/");

@@ -1,4 +1,7 @@
 ﻿@page "/resume"
+@inject HttpClient Http
+@using MiWebBlazor.Shared
+@using System.Globalization
 
 <!-- Resume Section -->
 <section id="resume" class="resume section">
@@ -17,62 +20,71 @@
                 <h3 class="resume-title">Sumary</h3>
 
                 <div class="resume-item pb-0">
-                    <h4>Brandon Johnson</h4>
-                    <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+                    <h4>@myPerson.Name</h4>
+                    <p><em>@myResume.Sumary</em></p>
                     <ul>
-                        <li>Portland par 127,Orlando, FL</li>
-                        <li>(123) 456-7891</li>
-                        <li>alice.barkley@example.com</li>
+                        <li>@myPersonLocation.Street, @myPersonLocation.City, @myPersonLocation.Country</li>
+                        <li>@myPerson.Phone</li>
+                        <li>@myPerson.Website</li>
                     </ul>
                 </div><!-- Edn Resume Item -->
 
                 <h3 class="resume-title">Education</h3>
-                <div class="resume-item">
-                    <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                    <h5>2015 - 2016</h5>
-                    <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                    <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                </div><!-- Edn Resume Item -->
 
-                <div class="resume-item">
-                    <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                    <h5>2010 - 2014</h5>
-                    <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                    <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-                </div><!-- Edn Resume Item -->
+                @foreach (var titleItem in myTitleList)
+                {
+                    <div class="resume-item">
+                        <h4>@titleItem.Name</h4>
+                        <h5>@titleItem.StartDate.ToString("yyyy") - @titleItem.EndDate.ToString("yyyy")</h5>
+                        <p><em>@titleItem.EducationalCenter, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().City</em></p>
+                        <p>@titleItem.Description</p>
+                    </div>
 
+                    <!-- Edn Resume Item -->
+                }
             </div>
 
             <div class="col-lg-6" >
                 <h3 class="resume-title">Professional Experience</h3>
-                <div class="resume-item">
-                    <h4>Senior graphic design specialist</h4>
-                    <h5>2019 - Present</h5>
-                    <p><em>Experion, New York, NY </em></p>
-                    <ul>
-                        <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                    </ul>
-                </div><!-- Edn Resume Item -->
+                @foreach (var JobItem in myJobList)
+                {
+                    <div class="resume-item">
+                        <h4>@JobItem.Description</h4>
+                        <h5>@JobItem.StartDate.ToString("yyyy") - @JobItem.EndDate.ToString("yyyy")</h5>
+                        <p><em>@JobItem.Company, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().City </em></p>
+                        <ul>
+                            @foreach (var achievementItem in myAchievementList.Where(x => x.JobId == JobItem.Id).ToList())
+                            {
+                                <li>@achievementItem.Description</li>
+                            }
+                        </ul>
+                    </div>
 
-                <div class="resume-item">
-                    <h4>Graphic design specialist</h4>
-                    <h5>2017 - 2018</h5>
-                    <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                    <ul>
-                        <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                        <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                        <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                        <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                    </ul>
-                </div><!-- Edn Resume Item -->
-
+                    <!-- Edn Resume Item -->
+                }
             </div>
-
         </div>
 
     </div>
 
 </section><!-- /Resume Section -->
+@code {
+    int IdResume = 2;
+    Resume myResume = new Resume();
+    Person myPerson = new Person();
+    List<Location> myLocationList = new List<Location>();
+    Location myPersonLocation = new Location();
+    List<Title> myTitleList = new List<Title>();
+    List<Job> myJobList = new List<Job>();
+    List<Achievement> myAchievementList = new List<Achievement>();
+    protected override async Task OnInitializedAsync()
+    {
+        myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}");
+        myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}");
+        myLocationList = await Http.GetFromJsonAsync<List<Location>>($"api/Location");
+        myPersonLocation = myLocationList.Where(x => x.Id == myPerson.LocationId).ToList().FirstOrDefault();
+        myTitleList = await Http.GetFromJsonAsync<List<Title>>($"api/Title/{IdResume}");
+        myJobList = await Http.GetFromJsonAsync<List<Job>>($"api/Job/{IdResume}");
+        myAchievementList = await Http.GetFromJsonAsync<List<Achievement>>($"api/Achievement");
+    }
+}

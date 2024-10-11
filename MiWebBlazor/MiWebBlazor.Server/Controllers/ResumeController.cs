@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MiWebBlazor.Server.Data;
@@ -26,10 +28,9 @@ namespace MiWebBlazor.Server.Controllers
             return Ok(lista);
         }
 
-
         [HttpGet]
         [Route("{id}")]
-        public async Task<ActionResult<List<Resume>>> GetSingleResume(int id)
+        public async Task<ActionResult<Resume>> GetSingleResume(int id)
         {
             var miobjeto = await _context.Resumes.FirstOrDefaultAsync(ob => ob.Id == id);
             if (miobjeto == null)
@@ -39,8 +40,8 @@ namespace MiWebBlazor.Server.Controllers
 
             return Ok(miobjeto);
         }
-        [HttpPost]
 
+        [HttpPost]
         public async Task<ActionResult<Resume>> CreateResume(Resume objeto)
         {
 
@@ -66,7 +67,6 @@ namespace MiWebBlazor.Server.Controllers
 
         }
 
-
         [HttpDelete]
         [Route("{id}")]
         public async Task<ActionResult<List<Resume>>> DeleteResume(int id)
@@ -90,4 +90,5 @@ namespace MiWebBlazor.Server.Controllers
         }
     }
 }
+
 

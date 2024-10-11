@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiWebBlazor.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc304c306afeaf0ebd36f631bf5885979dbd14eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0c7545d0596c0a00c35d68473eab18cb1c66ead")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiWebBlazor.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiWebBlazor.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

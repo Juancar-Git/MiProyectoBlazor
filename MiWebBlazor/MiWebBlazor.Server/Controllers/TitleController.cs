@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MiWebBlazor.Server.Data;
 using MiWebBlazor.Shared;
+using System.Collections.Generic;
 
 namespace MiWebBlazor.Server.Controllers
 {
@@ -28,16 +29,17 @@ namespace MiWebBlazor.Server.Controllers
 
 
         [HttpGet]
-        [Route("{id}")]
-        public async Task<ActionResult<List<Title>>> GetSingleTitle(int id)
+        [Route("{resumeId}")]
+        public async Task<ActionResult<List<Title>>> GetSingleTitle(int resumeId)
         {
-            var miobjeto = await _context.Titles.FirstOrDefaultAsync(ob => ob.Id == id);
+            var miobjeto = await  _context.Titles.ToListAsync();
+            List<Title> titleList = (List<Title>)miobjeto.Where(ob => ob.ResumeId == resumeId).ToList();
             if (miobjeto == null)
             {
                 return NotFound(" :/");
             }
 
-            return Ok(miobjeto);
+            return Ok(titleList);
         }
         [HttpPost]
 

@@ -1,6 +1,6 @@
 @MiWebBlazor.Server_HostAddress = http://localhost:5173
 
-GET {{MiWebBlazor.Server_HostAddress}}/weatherforecast/
+GET {{MiWebBlazor.Server_HostAddress}}/api/
 Accept: application/json
 
 ###

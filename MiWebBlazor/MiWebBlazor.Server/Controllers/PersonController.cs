@@ -28,10 +28,10 @@ namespace MiWebBlazor.Server.Controllers
 
 
         [HttpGet]
-        [Route("{id}")]
-        public async Task<ActionResult<List<Person>>> GetSinglePerson(int id)
+        [Route("{resumeId}")]
+        public async Task<ActionResult<List<Person>>> GetSinglePerson(int resumeId)
         {
-            var miobjeto = await _context.Persons.FirstOrDefaultAsync(ob => ob.Id == id);
+            var miobjeto = await _context.Persons.FirstOrDefaultAsync(ob => ob.ResumeId == resumeId);
             if (miobjeto == null)
             {
                 return NotFound(" :/");

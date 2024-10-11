@@ -28,16 +28,17 @@ namespace MiWebBlazor.Server.Controllers
 
 
         [HttpGet]
-        [Route("{id}")]
-        public async Task<ActionResult<List<Job>>> GetSingleJob(int id)
+        [Route("{resumeId}")]
+        public async Task<ActionResult<List<Job>>> GetSingleJob(int resumeId)
         {
-            var miobjeto = await _context.Jobs.FirstOrDefaultAsync(ob => ob.Id == id);
+            var miobjeto = await _context.Jobs.ToListAsync();
+            List<Job> jobList = (List<Job>)miobjeto.Where(ob => ob.ResumeId == resumeId).ToList();
             if (miobjeto == null)
             {
                 return NotFound(" :/");
             }
 
-            return Ok(miobjeto);
+            return Ok(jobList);
         }
         [HttpPost]
 

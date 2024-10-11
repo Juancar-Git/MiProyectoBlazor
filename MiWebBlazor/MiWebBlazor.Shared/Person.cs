@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,12 +16,12 @@ namespace MiWebBlazor.Shared
         public string Website { get; set; } = string.Empty;
         public string Phone { get; set; } = string.Empty;
         public  string Email { get; set; } = string.Empty;  
-        public bool isFreelance { get; set; }//Revisar si donde va este campo
+        public bool IsFreelancer { get; set; }//Revisar si donde va este campo
         public Location? Location { get; set; }
         public int LocationId { get; set; }
         public Resume? Resume { get; set; }
         public int ResumeId { get; set; }
-        public async Task<int> MyAge()
+        public int MyAge()
         {
             DateTime now = DateTime.Today;
             int age = DateTime.Today.Year - Birthday.Year;
@@ -30,10 +31,13 @@ namespace MiWebBlazor.Shared
             else
                 return age;
         }
-        public async Task<string> Freelance()
+        public string Freelance()
         {
-            string result = isFreelance ? "Available" : "unavailable";
-            return result;
+            return IsFreelancer ? "Available" : "unavailable";
+        }
+        public string BirthdayFormated()
+        {
+            return Birthday.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
         }
 
         public object Clone()

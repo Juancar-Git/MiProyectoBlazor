@@ -1,6 +1,8 @@
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\bin\Debug\net8.0\MiWebBlazor.Shared.deps.json
+C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\bin\Debug\net8.0\MiWebBlazor.Shared.runtimeconfig.json
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\bin\Debug\net8.0\MiWebBlazor.Shared.dll
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\bin\Debug\net8.0\MiWebBlazor.Shared.pdb
+C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.csproj.AssemblyReference.cache
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.AssemblyInfoInputs.cache
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.AssemblyInfo.cs
@@ -9,4 +11,5 @@ C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Sha
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.dll
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\refint\MiWebBlazor.Shared.dll
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.pdb
+C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\MiWebBlazor.Shared.genruntimeconfig.cache
 C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Shared\obj\Debug\net8.0\ref\MiWebBlazor.Shared.dll

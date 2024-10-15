@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MiWebBlazor.Client",
   "resources": {
-    "hash": "sha256-y25nmSmUxj9QQg51lUNaODQRw8Cy0j9GcSAFFjNtoBM=",
+    "hash": "sha256-eA3KHJZv3ISq7BrX+44jFtigrTa+TNRnil8v3/GFm9w=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.kq4zpzce4o.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -251,11 +251,11 @@
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
       "MiWebBlazor.Shared.wasm": "sha256-JjKvnE9AwFp4Bp9tHbAqW3nYMxG7nC4i0iGh9oiaDIE=",
-      "MiWebBlazor.Client.wasm": "sha256-VyRjtuTdhuOk68OT2efOXE0OWZs/d5Idk0CE+OBQfQY="
+      "MiWebBlazor.Client.wasm": "sha256-FstRm6yJfoNiDBhs9N/c9BIg3g/2Ox3/cU8TFCLSJI0="
     },
     "pdb": {
       "MiWebBlazor.Shared.pdb": "sha256-rX8gf+a4/O4HFGN/VkhxvrBYpAWy54bYlJ1Hui0hZ7w=",
-      "MiWebBlazor.Client.pdb": "sha256-eGfMkXcM2XvCJdKwZYuc4GeCUeeJMLSHrfiTUl0Jzd4="
+      "MiWebBlazor.Client.pdb": "sha256-kO8ap7ySxUdKdEx/LsUh5nL5qoX+ReTkoh/y1VjBIAE="
     },
     "satelliteResources": {
       "cs": {

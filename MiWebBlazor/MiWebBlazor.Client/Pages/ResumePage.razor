@@ -3,88 +3,98 @@
 @using MiWebBlazor.Shared
 @using System.Globalization
 
-<!-- Resume Section -->
-<section id="resume" class="resume section">
 
-    <!-- Section Title -->
-    <div class="container section-title" >
-        <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+@if (myAchievementList == null)
+{
+    <section id="hero" class="hero section">
+        <p>Loading...</p>
+    </section>
+}
+else
+{
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Resume</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row">
+            <div class="row">
 
-            <div class="col-lg-6" >
-                <h3 class="resume-title">Sumary</h3>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Sumary</h3>
 
-                <div class="resume-item pb-0">
-                    <h4>@myPerson.Name</h4>
-                    <p><em>@myResume.Sumary</em></p>
-                    <ul>
-                        <li>@myPersonLocation.Street, @myPersonLocation.City, @myPersonLocation.Country</li>
-                        <li>@myPerson.Phone</li>
-                        <li>@myPerson.Website</li>
-                    </ul>
-                </div><!-- Edn Resume Item -->
-
-                <h3 class="resume-title">Education</h3>
-
-                @foreach (var titleItem in myTitleList)
-                {
-                    <div class="resume-item">
-                        <h4>@titleItem.Name</h4>
-                        <h5>@titleItem.StartDate.ToString("yyyy") - @titleItem.EndDate.ToString("yyyy")</h5>
-                        <p><em>@titleItem.EducationalCenter, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().City</em></p>
-                        <p>@titleItem.Description</p>
-                    </div>
-
-                    <!-- Edn Resume Item -->
-                }
-            </div>
-
-            <div class="col-lg-6" >
-                <h3 class="resume-title">Professional Experience</h3>
-                @foreach (var JobItem in myJobList)
-                {
-                    <div class="resume-item">
-                        <h4>@JobItem.Description</h4>
-                        <h5>@JobItem.StartDate.ToString("yyyy") - @JobItem.EndDate.ToString("yyyy")</h5>
-                        <p><em>@JobItem.Company, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().City </em></p>
+                    <div class="resume-item pb-0">
+                        <h4>@myPerson.Name</h4>
+                        <p><em>@myResume.Sumary</em></p>
                         <ul>
-                            @foreach (var achievementItem in myAchievementList.Where(x => x.JobId == JobItem.Id).ToList())
-                            {
-                                <li>@achievementItem.Description</li>
-                            }
+                            <li>@myPersonLocation.Street, @myPersonLocation.City, @myPersonLocation.Country</li>
+                            <li>@myPerson.Phone</li>
+                            <li>@myPerson.Website</li>
                         </ul>
-                    </div>
+                    </div><!-- Edn Resume Item -->
 
-                    <!-- Edn Resume Item -->
-                }
+                    <h3 class="resume-title">Education</h3>
+
+                    @foreach (var titleItem in myTitleList)
+                    {
+                        <div class="resume-item">
+                            <h4>@titleItem.Name</h4>
+                            <h5>@titleItem.StartDate.ToString("yyyy") - @titleItem.EndDate.ToString("yyyy")</h5>
+                            <p><em>@titleItem.EducationalCenter, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().City</em></p>
+                            <p>@titleItem.Description</p>
+                        </div>
+
+                        <!-- Edn Resume Item -->
+                    }
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    @foreach (var JobItem in myJobList)
+                    {
+                        <div class="resume-item">
+                            <h4>@JobItem.Description</h4>
+                            <h5>@JobItem.StartDate.ToString("yyyy") - @JobItem.EndDate.ToString("yyyy")</h5>
+                            <p><em>@JobItem.Company, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().City </em></p>
+                            <ul>
+                                @foreach (var achievementItem in myAchievementList.Where(x => x.JobId == JobItem.Id).ToList())
+                                {
+                                    <li>@achievementItem.Description</li>
+                                }
+                            </ul>
+                        </div>
+
+                        <!-- Edn Resume Item -->
+                    }
+                </div>
             </div>
+
         </div>
+    </section> <!-- /Resume Section -->
+}
 
-    </div>
 
-</section><!-- /Resume Section -->
 @code {
     int IdResume = 2;
-    Resume myResume = new Resume();
-    Person myPerson = new Person();
-    List<Location> myLocationList = new List<Location>();
-    Location myPersonLocation = new Location();
-    List<Title> myTitleList = new List<Title>();
-    List<Job> myJobList = new List<Job>();
-    List<Achievement> myAchievementList = new List<Achievement>();
+    Resume myResume;
+    Person myPerson;
+    List<Location> myLocationList;
+    Location myPersonLocation;
+    List<Title> myTitleList;
+    List<Job> myJobList;
+    List<Achievement> myAchievementList;
     protected override async Task OnInitializedAsync()
     {
-        myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}");
-        myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}");
-        myLocationList = await Http.GetFromJsonAsync<List<Location>>($"api/Location");
-        myPersonLocation = myLocationList.Where(x => x.Id == myPerson.LocationId).ToList().FirstOrDefault();
-        myTitleList = await Http.GetFromJsonAsync<List<Title>>($"api/Title/{IdResume}");
-        myJobList = await Http.GetFromJsonAsync<List<Job>>($"api/Job/{IdResume}");
-        myAchievementList = await Http.GetFromJsonAsync<List<Achievement>>($"api/Achievement");
+        myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}") ?? new Resume();
+        myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}") ?? new Person();
+        myLocationList = await Http.GetFromJsonAsync<List<Location>>($"api/Location") ?? new List<Location>();
+        myPersonLocation = myLocationList.Where(x => x.Id == myPerson.LocationId).ToList().FirstOrDefault() ?? new Location();
+        myTitleList = await Http.GetFromJsonAsync<List<Title>>($"api/Title/{IdResume}") ?? new List<Title>();
+        myJobList = await Http.GetFromJsonAsync<List<Job>>($"api/Job/{IdResume}") ?? new List<Job>();
+        myAchievementList = await Http.GetFromJsonAsync<List<Achievement>>($"api/Achievement") ?? new List<Achievement>();
     }
 }

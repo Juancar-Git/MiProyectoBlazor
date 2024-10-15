@@ -1613,17 +1613,17 @@
       "url": "_framework\/MiWebBlazor.Shared.pdb"
     },
     {
-      "hash": "sha256-eU4hhA0+xc7Xhc8Rf5TIkLefDOGlJthjKK11TyfuFq8=",
+      "hash": "sha256-638vQ77T0GaU+XawXAIBDp\/To5ugIli4tvWRmtcK2VQ=",
       "url": "_framework\/MiWebBlazor.Client.wasm"
     },
     {
-      "hash": "sha256-RrplqC6tMRCcQifnZiSFBKupZF+sOqmy0e6LWq+xCl0=",
+      "hash": "sha256-Wu+j09JTdyNbjut97yGdNz1h3tmuh0eGN9ke6jGUkRw=",
       "url": "_framework\/MiWebBlazor.Client.pdb"
     },
     {
-      "hash": "sha256-XJYz9CEkhLohInZe5zftnpUO3pfN8DjB+AlWKqxgSow=",
+      "hash": "sha256-q9EUQCHPGP7GbVUQBX1lB9lWCSyKVtT3Bdd7rqwEDLY=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "8WY5ttEK"
+  "version": "fHNf1Qgf"
 };

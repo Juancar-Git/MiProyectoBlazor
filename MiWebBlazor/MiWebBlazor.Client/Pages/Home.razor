@@ -1,11 +1,16 @@
 ﻿@page "/"
-@inject HttpClient Http
 @using MiWebBlazor.Shared;
+@inject HttpClient Http
 
-<main class="main">
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+    @if (myLocation == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
         <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
         <img src="assets/img/hero-bg.jpg" alt="">
         <!-- <div class="container text-center" data-aos="zoom-out" data-aos-delay="100"> -->
@@ -18,21 +23,18 @@
                 </div>
             </div>
         </div>
-
-    </section><!-- /Hero Section -->
-
-</main>
-
-@code{
+    }
+</section><!-- /Hero Section -->
+@code {
     int IdResume = 2;
-    Resume myResume = new Resume();
-    Person myPerson = new Person();
-    Location myLocation = new Location();
+    Resume myResume;
+    Person myPerson;
+    Location myLocation;
     protected override async Task OnInitializedAsync()
     {
-        myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}");
-        myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}");
-        myLocation = await Http.GetFromJsonAsync<Location>($"api/Location/{myPerson.LocationId}");
+        myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}") ?? new Resume();
+        myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}") ?? new Person();
+        myLocation = await Http.GetFromJsonAsync<Location>($"api/Location/{myPerson.LocationId}") ?? new Location();
     }
 }
 

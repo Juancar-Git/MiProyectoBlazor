@@ -15,7 +15,6 @@ namespace MiWebBlazor.Server.Controllers
 
         public AchievementController(ApplicationDbContext context)
         {
-
             _context = context;
         }
 

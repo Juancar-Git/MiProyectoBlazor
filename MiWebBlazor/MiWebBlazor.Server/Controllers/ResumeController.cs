@@ -44,7 +44,6 @@ namespace MiWebBlazor.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<Resume>> CreateResume(Resume objeto)
         {
-
             _context.Resumes.Add(objeto);
             await _context.SaveChangesAsync();
             return Ok(await GetDbResume());

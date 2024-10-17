@@ -97,7 +97,7 @@
       "url": "assets\/img\/testimonials\/testimonials-5.jpg"
     },
     {
-      "hash": "sha256-JWXKZaBVZ8rgDVnrKE8Jp83IfmTb0INzaJ7C1yDZrsU=",
+      "hash": "sha256-NPrZqGTyrWOtPk6xynMpZyocl4ofRMFS0pNcHcrtoio=",
       "url": "assets\/js\/main.js"
     },
     {
@@ -409,7 +409,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-WX0fqvSsO2mtmwhDVoDisnZliy0PbkVxQDpVDOCDwmc=",
+      "hash": "sha256-kHcL6V\/BlYN4mrx\/QO+XhGn+6whlMEEPt19ur1Y7DCU=",
       "url": "index.html"
     },
     {
@@ -1605,25 +1605,25 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-JjKvnE9AwFp4Bp9tHbAqW3nYMxG7nC4i0iGh9oiaDIE=",
+      "hash": "sha256-J7MqUtDIBROUTu51MS1pX+1t11XsfLUXcCQx8aaztNk=",
       "url": "_framework\/MiWebBlazor.Shared.wasm"
     },
     {
-      "hash": "sha256-rX8gf+a4\/O4HFGN\/VkhxvrBYpAWy54bYlJ1Hui0hZ7w=",
+      "hash": "sha256-z5Cl6M+R7CScyuJZFa9BFqNs3hGzsCdjXlT0ddGMHK0=",
       "url": "_framework\/MiWebBlazor.Shared.pdb"
     },
     {
-      "hash": "sha256-638vQ77T0GaU+XawXAIBDp\/To5ugIli4tvWRmtcK2VQ=",
+      "hash": "sha256-y5kArx5C8+Raq8ktg2mBJXAGchgKKPk\/RaKGkstxlV4=",
       "url": "_framework\/MiWebBlazor.Client.wasm"
     },
     {
-      "hash": "sha256-Wu+j09JTdyNbjut97yGdNz1h3tmuh0eGN9ke6jGUkRw=",
+      "hash": "sha256-WxLfyetjj1xATBH\/KqYHGW6XP1ewIgn\/D3lLowsGvLM=",
       "url": "_framework\/MiWebBlazor.Client.pdb"
     },
     {
-      "hash": "sha256-q9EUQCHPGP7GbVUQBX1lB9lWCSyKVtT3Bdd7rqwEDLY=",
+      "hash": "sha256-7sHsXUXX+dpSObrr+wPVrORkeNDaifbIueBEK5boX+w=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "fHNf1Qgf"
+  "version": "BfwNrMjY"
 };

@@ -15,7 +15,7 @@ else
     <!-- Resume Section -->
     <section id="resume" class="resume section">
         <!-- Section Title -->
-        <div class="container section-title">
+        <div class="container section-title" data-aos="fade-up">
             <h2>Resume</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
@@ -24,7 +24,7 @@ else
 
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="resume-title">Sumary</h3>
 
                     <div class="resume-item pb-0">
@@ -44,7 +44,7 @@ else
                         <div class="resume-item">
                             <h4>@titleItem.Name</h4>
                             <h5>@titleItem.StartDate.ToString("yyyy") - @titleItem.EndDate.ToString("yyyy")</h5>
-                            <p><em>@titleItem.EducationalCenter, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault().City</em></p>
+                            <p><em>@titleItem.EducationalCenter, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault()?.Street, @myLocationList.Where(x => x.Id == @titleItem.LocationId).ToList().FirstOrDefault()?.City</em></p>
                             <p>@titleItem.Description</p>
                         </div>
 
@@ -52,14 +52,14 @@ else
                     }
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="resume-title">Professional Experience</h3>
                     @foreach (var JobItem in myJobList)
                     {
                         <div class="resume-item">
                             <h4>@JobItem.Description</h4>
                             <h5>@JobItem.StartDate.ToString("yyyy") - @JobItem.EndDate.ToString("yyyy")</h5>
-                            <p><em>@JobItem.Company, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().Street, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault().City </em></p>
+                            <p><em>@JobItem.Company, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault()?.Street, @myLocationList.Where(x => x.Id == @JobItem.LocationId).ToList().FirstOrDefault()?.City </em></p>
                             <ul>
                                 @foreach (var achievementItem in myAchievementList.Where(x => x.JobId == JobItem.Id).ToList())
                                 {

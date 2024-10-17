@@ -4,7 +4,7 @@
 @using System.Globalization
 
 <!-- About Section -->
-@if (myLocation == null)
+@if (mySkillList == null)
 {
     <section id="hero" class="hero section">
         <p>Loading...</p>
@@ -14,11 +14,11 @@ else
 {
     <section id="about" class="about section">
         <!-- Section Title -->
-        <div class="container section-title">
+        <div class="container section-title" data-aos="fade-up">
             <h2>About</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4 justify-content-center">
                 <div class="col-lg-4">
                     <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
@@ -55,6 +55,56 @@ else
 
         </div>
     </section> <!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Skills</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- La plantilla Gratuita no incluye las siguientes class en css: skills-content skills-animation -->
+            <div class="row skills-content skills-animation">
+
+                <div class="col-lg-6">
+                    @foreach (var SkillItem in mySkillList.Take(3).ToList())
+                    {
+                        <div class="progress">
+                            <span class="skill"><span>@SkillItem.Name</span> <i class="val">@SkillItem.Percentage%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="@SkillItem.Percentage" aria-valuemin="0" aria-valuemax="100" style="width: @SkillItem.Percentage%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- End Skills Item -->
+                    }
+                </div>
+
+                <div class="col-lg-6">
+                    @foreach (var SkillItem in mySkillList.Skip(3).Take(3).ToList())
+                    {
+                        <div class="progress">
+                            <span class="skill"><span>@SkillItem.Name</span> <i class="val">@SkillItem.Percentage%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="@SkillItem.Percentage" aria-valuemin="0" aria-valuemax="100" style="width: @SkillItem.Percentage%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- End Skills Item -->
+                    }
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- /Skills Section -->
 }
 
 
@@ -63,10 +113,13 @@ else
     Resume myResume;
     Person myPerson;
     Location myLocation;
+    List<Skill> mySkillList;
     protected override async Task OnInitializedAsync()
     {
         myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}") ?? new Resume();
         myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}") ?? new Person();
         myLocation = await Http.GetFromJsonAsync<Location>($"api/Location/{myPerson.LocationId}") ?? new Location();
+        List<Skill> auxSkillList = await Http.GetFromJsonAsync<List<Skill>>($"api/Skill/") ?? new List<Skill>();
+        mySkillList = auxSkillList.OrderByDescending(x => x.Percentage).ToList();
     }
 }

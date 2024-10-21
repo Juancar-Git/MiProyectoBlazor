@@ -4,7 +4,7 @@
 @using System.Globalization
 
 <!-- About Section -->
-@if (mySkillList == null)
+@if (myTestimonialList == null)
 {
     <section id="hero" class="hero section">
         <p>Loading...</p>
@@ -55,7 +55,6 @@ else
 
         </div>
     </section> <!-- /About Section -->
-
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
@@ -79,7 +78,6 @@ else
                                 <div class="progress-bar" role="progressbar" aria-valuenow="@SkillItem.Percentage" aria-valuemin="0" aria-valuemax="100" style="width: @SkillItem.Percentage%;"></div>
                             </div>
                         </div>
-
                         <!-- End Skills Item -->
                     }
                 </div>
@@ -105,8 +103,97 @@ else
     </section>
 
     <!-- /Skills Section -->
-}
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
 
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Facts</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+                @foreach (var FactItem in myFactList.Take(4).ToList())
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <!-- Parece que los atributos data-purecounter-x y la clase purecounter no están implementados con la plantilla gratuita -->
+                            <!-- <span data-purecounter-start="0" data-purecounter-end="ARROBAFactItem.Quantity" data-purecounter-duration="1" class="purecounter"></span> -->
+                            <span class="purecounter">@FactItem.Quantity</span>
+                            <p>@FactItem.Name</p>
+                        </div>
+                    </div>
+
+                    <!-- End Stats Item -->
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <!-- La versión gratuita no incluye el desplazamiento de los cards, hay que implementarlo -->
+    <section id="testimonials" class="testimonials section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Testimonials</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                </script>
+                <div class="swiper-wrapper">
+
+                    @foreach (var TestimonialItem in myTestimonialList.Take(5).ToList())
+                    {
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="@TestimonialItem.SrcProfileImage" class="testimonial-img" alt="">
+                                <h3>@TestimonialItem.Name</h3>
+                                <h4>@TestimonialItem.Occupation</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>@TestimonialItem.TextMessage</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- End testimonial item -->
+                    }
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- /Testimonials Section -->
+}
 
 @code {
     int IdResume = 2;
@@ -114,12 +201,18 @@ else
     Person myPerson;
     Location myLocation;
     List<Skill> mySkillList;
+    List<Fact> myFactList;
+    List<Testimonial> myTestimonialList;
     protected override async Task OnInitializedAsync()
     {
         myResume = await Http.GetFromJsonAsync<Resume>($"api/Resume/{IdResume}") ?? new Resume();
         myPerson = await Http.GetFromJsonAsync<Person>($"api/Person/{IdResume}") ?? new Person();
         myLocation = await Http.GetFromJsonAsync<Location>($"api/Location/{myPerson.LocationId}") ?? new Location();
         List<Skill> auxSkillList = await Http.GetFromJsonAsync<List<Skill>>($"api/Skill/") ?? new List<Skill>();
-        mySkillList = auxSkillList.OrderByDescending(x => x.Percentage).ToList();
+        mySkillList = auxSkillList.Where(x => x.ResumeId == IdResume).OrderByDescending(x => x.Percentage).ToList();
+        List<Fact> auxFactList = await Http.GetFromJsonAsync<List<Fact>>($"api/Fact/") ?? new List<Fact>();
+        myFactList = auxFactList.Where(x => x.ResumeId == IdResume).OrderByDescending(x => x.Quantity).ToList();
+        List<Testimonial> auxTestimonialList = await Http.GetFromJsonAsync<List<Testimonial>>($"api/Testimonial/") ?? new List<Testimonial>();
+        myTestimonialList = auxTestimonialList.Where(x => x.ResumeId == IdResume).ToList();
     }
 }

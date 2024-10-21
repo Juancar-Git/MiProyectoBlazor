@@ -94,6 +94,7 @@ else
         myLocationList = await Http.GetFromJsonAsync<List<Location>>($"api/Location") ?? new List<Location>();
         myPersonLocation = myLocationList.Where(x => x.Id == myPerson.LocationId).ToList().FirstOrDefault() ?? new Location();
         myTitleList = await Http.GetFromJsonAsync<List<Title>>($"api/Title/{IdResume}") ?? new List<Title>();
+        //Buscar si es correcto devolver una lista desde el servidor o hacer el filtro en el cliente.
         myJobList = await Http.GetFromJsonAsync<List<Job>>($"api/Job/{IdResume}") ?? new List<Job>();
         myAchievementList = await Http.GetFromJsonAsync<List<Achievement>>($"api/Achievement") ?? new List<Achievement>();
     }

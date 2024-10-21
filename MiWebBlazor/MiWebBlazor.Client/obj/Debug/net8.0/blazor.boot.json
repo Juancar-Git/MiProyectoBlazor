@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MiWebBlazor.Client",
   "resources": {
-    "hash": "sha256-zrftoZL9RXoNu7e+HV+Xi3Dng/zsp9oGKWahsj2EwOI=",
+    "hash": "sha256-HYkNKuGBXInip2n0Yptkb4xRhInmMs3z2m7D8rAqaK8=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.kq4zpzce4o.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -250,12 +250,12 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "MiWebBlazor.Shared.wasm": "sha256-J7MqUtDIBROUTu51MS1pX+1t11XsfLUXcCQx8aaztNk=",
-      "MiWebBlazor.Client.wasm": "sha256-nFHagy3ZZcBByWXGaQRT+IHL4TMiMtV6AmUfHS7jBYc="
+      "MiWebBlazor.Shared.wasm": "sha256-sbKpqHwkdu2/Aohnfuvbp/U8OxuFX05oS3126G91AeU=",
+      "MiWebBlazor.Client.wasm": "sha256-mCNNKBnNR2EFXGKHPmUnelzknF1oHtwpht5kcf7ELjU="
     },
     "pdb": {
-      "MiWebBlazor.Shared.pdb": "sha256-z5Cl6M+R7CScyuJZFa9BFqNs3hGzsCdjXlT0ddGMHK0=",
-      "MiWebBlazor.Client.pdb": "sha256-KL4B8Sd5ScA7IAUXGtvc86pNTkgfcF3ZObHuNuTFAQ8="
+      "MiWebBlazor.Shared.pdb": "sha256-iDHNNdsdmWtpoibQWlEAR1KChAo2WD6EXQAUy2q3Gx8=",
+      "MiWebBlazor.Client.pdb": "sha256-l8nICqwM1M/EOKJLWOhCUGS4FYGnAbwaOrvgUdX9zxE="
     },
     "satelliteResources": {
       "cs": {

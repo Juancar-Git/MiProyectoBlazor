@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 builder.Services.AddControllers();
 
+//Vis si se puede dar acceso solo a la aplicación e implementar
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy",

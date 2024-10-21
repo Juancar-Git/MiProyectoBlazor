@@ -20,5 +20,7 @@ namespace MiWebBlazor.Server.Data
         public DbSet<Skill> Skills { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Achievement> Achievements { get; set; }
+        public DbSet<Fact> Facts { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
     }
 }

@@ -1,0 +1,51 @@
+﻿@page "/services"
+@inject HttpClient Http
+@using MiWebBlazor.Shared
+@using System.Globalization
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            @foreach (var ServeceItem in myServiceList)
+            {
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="@aosCounter++00">
+                    <div class="service-item item-@ServeceItem.Color position-relative">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="@ServeceItem.DPath"></path>
+                            </svg>
+                            <i class="@ServeceItem.IBiClass"></i>
+                        </div>
+                        <a href="#" class="stretched-link">
+                            <h3>@ServeceItem.Name</h3>
+                        </a>
+                        <p>@ServeceItem.Description</p>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+            }
+        </div>
+    </div>
+
+</section><!-- /Services Section -->
+@code {
+    int IdResume = 2;
+    int aosCounter = 1;
+    List<Service> myServiceList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        List<Service> auxServiceList = await Http.GetFromJsonAsync<List<Service>>($"api/Service/") ?? new List<Service>();
+        myServiceList = auxServiceList.Where(x => x.ResumeId == IdResume).ToList();
+    }
+}

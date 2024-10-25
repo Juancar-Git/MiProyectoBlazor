@@ -1,52 +1,93 @@
 ﻿@page "/portfolio"
 @inject HttpClient Http
+@inject IJSRuntime JS
 @using MiWebBlazor.Shared
 @using System.Globalization
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
+@if (myPortfolioList == null)
+{
+    <section id="hero" class="hero section">
+        <p>Loading...</p>
+    </section>
+}
+else
+{
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
 
-    <div class="container">
+        <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li class="@classDictionary["all"]" @onclick=@(async(e) => await CambiarFiltro(e, "all"))>All</li>
-                <li class="@classDictionary["app"]" @onclick=@(async(e) => await CambiarFiltro(e, "app"))>App</li>
-                <li class="@classDictionary["product"]" @onclick=@(async(e) => await CambiarFiltro(e, "product"))>Card</li>
-                <li class="@classDictionary["branding"]" @onclick=@(async(e) => await CambiarFiltro(e, "branding"))>Web</li>
-            </ul><!-- End Portfolio Filters -->
+                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                    <li class="@classDictionary["all"]" @onclick=@(async(e) => await CambiarFiltro(e, "all"))>All</li>
+                    <li class="@classDictionary["app"]" @onclick=@(async(e) => await CambiarFiltro(e, "app"))>App</li>
+                    <li class="@classDictionary["product"]" @onclick=@(async(e) => await CambiarFiltro(e, "product"))>Card</li>
+                    <li class="@classDictionary["branding"]" @onclick=@(async(e) => await CambiarFiltro(e, "branding"))>Web</li>
+                </ul><!-- End Portfolio Filters -->
 
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                @foreach (var PortfolioItem in myPortfolioList)
-                {
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@PortfolioItem.Filter">
-                        <img src="@PortfolioItem.SrcImage" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>@PortfolioItem.Name</h4>
-                            <p>@PortfolioItem.Description</p>
-                            <a href="@PortfolioItem.SrcImage" title="@PortfolioItem.Name" data-gallery="portfolio-gallery-@PortfolioItem.Filter" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    @foreach (var PortfolioItem in myPortfolioList)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@PortfolioItem.Filter">
+                            <img src="@PortfolioItem.SrcMainImage" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>@PortfolioItem.Name</h4>
+                                <p>@PortfolioItem.Description</p>
+                                <a title="@PortfolioItem.Name" data-gallery="portfolio-gallery-@PortfolioItem.Filter" class="glightbox preview-link" @onclick=@(async(e) => await GetClickImage(e, @PortfolioItem.SrcMainImage)) data-bs-toggle="modal" data-bs-target="#imageModal"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details" title="More Details" class="details-link" @onclick=@(async(e) => await ClickDetails(e, @PortfolioItem.Id))><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Item -->
+                    }
+                </div><!-- End Portfolio Container -->
+                <!-- Modal -->
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        @foreach (var PortfolioItem in myPortfolioList)
+                                        {
+                                            <div class="carousel-item @GetActive(@PortfolioItem.SrcMainImage)">
+                                                <img src="@PortfolioItem.SrcMainImage" class="d-block w-100" alt="...">
+                                            </div>
+                                        }
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- End Portfolio Item -->
-                }
-
-            </div><!-- End Portfolio Container -->
-
+            </div>
         </div>
 
-    </div>
+    </section>
 
-</section><!-- /Portfolio Section -->
+    <!-- /Portfolio Section -->
+}
+
 @code {
     [Inject]
     NavigationManager NavigationManager { get; set; }
@@ -54,6 +95,7 @@
     List<Portfolio> myPortfolioList;
     Dictionary<string, string> classDictionary = new Dictionary<string, string>();
     string[] strLiArr = { "all", "app", "product", "branding" };
+    string currentSrcImage = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -73,6 +115,21 @@
         StateHasChanged();
     }
 
+    protected async Task GetClickImage(MouseEventArgs mouseEventArgs, string SRCImage)
+    {
+        /*List<Portfolio> auxPortfolioList = new List<Portfolio>(myPortfolioList);
+        myPortfolioList.Clear();
+        StateHasChanged();
+        myPortfolioList = new List<Portfolio>(auxPortfolioList);*/
+        currentSrcImage = SRCImage.ToString();
+        StateHasChanged();
+    }
+
+    protected string GetActive(string itemImgSrc)
+    {
+        return itemImgSrc.Equals(currentSrcImage) ? "active" : "";
+    }
+
     protected async Task fillClassDictionary(string strActiveLi)
     {
         classDictionary.Clear();
@@ -80,5 +137,9 @@
         {
             classDictionary.Add(item, item == strActiveLi ? "filter-active" : "");
         }
+    }
+    protected async Task ClickDetails(MouseEventArgs mouseEventArgs, int idPortfolio)
+    {
+        await JS.InvokeVoidAsync("localStorage.setItem", "IdPortfolio", idPortfolio);
     }
 }

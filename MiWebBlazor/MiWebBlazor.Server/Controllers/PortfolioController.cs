@@ -29,7 +29,7 @@ namespace MiWebBlazor.Server.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<ActionResult<List<Portfolio>>> GetSinglePortfolio(int id)
+        public async Task<ActionResult<Portfolio>> GetSinglePortfolio(int id)
         {
             var miobjeto = await _context.Portfolios.FirstOrDefaultAsync(ob => ob.Id == id);
             if (miobjeto == null)

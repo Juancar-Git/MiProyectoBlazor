@@ -1,0 +1,83 @@
+﻿@page "/portfolio-details"
+@inject HttpClient Http
+@inject IJSRuntime JS
+@using MiWebBlazor.Shared
+@using System.Globalization
+
+@if (myPortfolio == null)
+{
+    <section id="hero" class="hero section">
+        <p>Loading...</p>
+    </section>
+}
+<!-- Portfolio Details Section -->
+<section id="portfolio-details" class="portfolio-details section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio Details</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-8">
+
+                <div id="carouselExample" class="carousel slide align-items-center">
+                    <div class="carousel-inner">
+                        @foreach (var UrlImageItem in @urlImageArray)
+                        {
+                            <div class="carousel-item @(UrlImageItem.Equals(@urlImageArray[0])?"active":"")">
+                                <img src=@UrlImageItem class="d-block w-100" alt="...">
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Project information</h3>
+                    <ul>
+                        <li><strong>Category</strong>: @myPortfolio?.Category</li>
+                        <li><strong>Client</strong>: @myPortfolio?.ClientName</li>
+                        <li><strong>Project date</strong>: @myPortfolio?.ProjectDate.ToString("dd MMM, yyyy") 01 March, 2020</li>
+                        <li><strong>Project URL</strong>: <a href="#">@myPortfolio?.ProjectUrl</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                    <h2>@myPortfolio?.SumaryTitle</h2>
+                    <p>
+                        @myPortfolio?.Sumary
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- /Portfolio Details Section -->
+}
+
+@code {
+    Portfolio myPortfolio;
+    string[] urlImageArray;
+    protected override async Task OnInitializedAsync()
+    {
+        var idLocalStorage = await JS.InvokeAsync<string>("localStorage.getItem", "IdPortfolio");
+        int portfolioId = int.Parse(idLocalStorage);
+        myPortfolio = await Http.GetFromJsonAsync<Portfolio>($"api/Portfolio/{portfolioId}") ?? new Portfolio();
+        urlImageArray = myPortfolio?.UrlImageList.Split(';') ?? new string[] { myPortfolio?.SrcMainImage };
+    }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {}
+    "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
+    "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
         "projectName": "MiWebBlazor.Shared",
-        "projectPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
+        "projectPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
         "packagesPath": "C:\\Users\\carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\obj\\",
+        "outputPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

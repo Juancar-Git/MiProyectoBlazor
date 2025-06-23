@@ -13,63 +13,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = MiWebBlazor.Client
 build_property.RootNamespace = MiWebBlazor.Client
-build_property.ProjectDir = C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Client\
+build_property.ProjectDir = C:\Users\carlos\OneDrive\Escritorio\WebBlazor\MiProyectoBlazor\MiWebBlazor\MiWebBlazor.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\carlos\Desktop\ProyectosBlazor\MiPrimeraWeb\MiWebBlazor\MiWebBlazor.Client
+build_property.MSBuildProjectDirectory = C:\Users\carlos\OneDrive\Escritorio\WebBlazor\MiProyectoBlazor\MiWebBlazor\MiWebBlazor.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/App.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Components/FooterComponent.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Components/FooterComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXJDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Components/HeaderComponent.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Components/HeaderComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXJDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/About.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/About.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/ContactPage.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/ContactPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/Home.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/PortfolioDetailsPage.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/PortfolioDetailsPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGZvbGlvRGV0YWlsc1BhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/PortfolioPage.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/PortfolioPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGZvbGlvUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/ResumePage.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/ResumePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdW1lUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Pages/ServicesPage.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Pages/ServicesPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/_Imports.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Layout/MainLayout.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6tbozwhwok
 
-[C:/Users/carlos/Desktop/ProyectosBlazor/MiPrimeraWeb/MiWebBlazor/MiWebBlazor.Client/Layout/NavMenu.razor]
+[C:/Users/carlos/OneDrive/Escritorio/WebBlazor/MiProyectoBlazor/MiWebBlazor/MiWebBlazor.Client/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-itpcvjbi8c

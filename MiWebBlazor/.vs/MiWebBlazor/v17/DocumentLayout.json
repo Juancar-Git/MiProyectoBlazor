@@ -1,54 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\",
+  "WorkspaceRootPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\portfoliodetailspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\portfoliodetailspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\portfoliopage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\portfoliopage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.shared\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|solutionrelative:miwebblazor.shared\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.server\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webblazor\\miproyectoblazor\\miwebblazor\\miwebblazor.server\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|solutionrelative:miwebblazor.server\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webblazor\\miproyectoblazor\\miwebblazor\\miwebblazor.shared\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|solutionrelative:miwebblazor.shared\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\about.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\about.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\resumepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\resumepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\pages\\contactpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\pages\\contactpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.shared\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|solutionrelative:miwebblazor.shared\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.client\\components\\headercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{215E365D-C82A-4B4E-874A-BDCCEC98C293}|MiWebBlazor.Client\\MiWebBlazor.Client.csproj|solutionrelative:miwebblazor.client\\components\\headercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.server\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|solutionrelative:miwebblazor.server\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|c:\\users\\carlos\\desktop\\proyectosblazor\\miprimeraweb\\miwebblazor\\miwebblazor.server\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1396158A-60CB-4363-8380-49EB5A6F89C5}|MiWebBlazor.Server\\MiWebBlazor.Server.csproj|solutionrelative:miwebblazor.server\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webblazor\\miproyectoblazor\\miwebblazor\\miwebblazor.shared\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{591866F2-087E-4B82-9F79-DB6955323AF0}|MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj|solutionrelative:miwebblazor.shared\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,152 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\Home.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T07:35:44.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PortfolioController.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
-              "RelativeDocumentMoniker": "MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
-              "RelativeToolTip": "MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T07:08:43.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Portfolio.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\Portfolio.cs",
-              "RelativeDocumentMoniker": "MiWebBlazor.Shared\\Portfolio.cs",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\Portfolio.cs",
-              "RelativeToolTip": "MiWebBlazor.Shared\\Portfolio.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAowA4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T04:55:28.759Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PortfolioDetailsPage.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\PortfolioDetailsPage.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\PortfolioDetailsPage.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\PortfolioDetailsPage.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\PortfolioDetailsPage.razor",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwFEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T11:03:53.916Z",
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "MiWebBlazor.Server\\Controllers\\PortfolioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T14:51:51.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PortfolioPage.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\PortfolioPage.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\PortfolioPage.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\PortfolioPage.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\PortfolioPage.razor",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAUwIEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T12:21:06.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HeaderComponent.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Components\\HeaderComponent.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Components\\HeaderComponent.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Components\\HeaderComponent.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Components\\HeaderComponent.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T08:56:14.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "MiWebBlazor.Server\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "MiWebBlazor.Server\\Controllers\\PersonController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwDoAAAAVAAAAAAAAAA==",
+              "Title": "Portfolio.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\Portfolio.cs",
+              "RelativeDocumentMoniker": "MiWebBlazor.Shared\\Portfolio.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\Portfolio.cs",
+              "RelativeToolTip": "MiWebBlazor.Shared\\Portfolio.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:02:53.996Z"
+              "WhenOpened": "2025-06-23T14:48:54.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TestimonialController.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\TestimonialController.cs",
-              "RelativeDocumentMoniker": "MiWebBlazor.Server\\Controllers\\TestimonialController.cs",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Server\\Controllers\\TestimonialController.cs",
-              "RelativeToolTip": "MiWebBlazor.Server\\Controllers\\TestimonialController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwD0AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\Skill.cs",
+              "RelativeDocumentMoniker": "MiWebBlazor.Shared\\Skill.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\Skill.cs",
+              "RelativeToolTip": "MiWebBlazor.Shared\\Skill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:06:47.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContactPage.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\ContactPage.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\ContactPage.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\ContactPage.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\ContactPage.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T09:40:25.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "About.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\About.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\About.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\About.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\About.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T11:05:35.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResumePage.razor",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\ResumePage.razor",
-              "RelativeDocumentMoniker": "MiWebBlazor.Client\\Pages\\ResumePage.razor",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\Pages\\ResumePage.razor",
-              "RelativeToolTip": "MiWebBlazor.Client\\Pages\\ResumePage.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T06:56:32.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Testimonial.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\Testimonial.cs",
-              "RelativeDocumentMoniker": "MiWebBlazor.Shared\\Testimonial.cs",
-              "ToolTip": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\Testimonial.cs",
-              "RelativeToolTip": "MiWebBlazor.Shared\\Testimonial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:36:33.132Z"
+              "WhenOpened": "2025-06-23T14:47:28.843Z",
+              "EditorCaption": ""
             }
           ]
         }

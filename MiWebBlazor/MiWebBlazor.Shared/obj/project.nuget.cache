@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ct6oBdLhVQ8=",
+  "dgSpecHash": "ynQm6HDMxdA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
+  "projectFilePath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlos\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\carlos\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

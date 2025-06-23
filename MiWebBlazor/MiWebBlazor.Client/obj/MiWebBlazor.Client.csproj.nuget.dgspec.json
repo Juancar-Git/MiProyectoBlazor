@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj": {}
+    "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj": {
+    "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj",
+        "projectUniqueName": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj",
         "projectName": "MiWebBlazor.Client",
-        "projectPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj",
+        "projectPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Client\\MiWebBlazor.Client.csproj",
         "packagesPath": "C:\\Users\\carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Client\\obj\\",
+        "outputPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
-                "projectPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj"
+              "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
+                "projectPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj"
               }
             }
           }
@@ -80,13 +80,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.7, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.7, )",
               "autoReferenced": true
             }
           },
@@ -101,18 +101,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.8, 8.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -121,14 +115,14 @@
         }
       }
     },
-    "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
+    "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
         "projectName": "MiWebBlazor.Shared",
-        "projectPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
+        "projectPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\MiWebBlazor.Shared.csproj",
         "packagesPath": "C:\\Users\\carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos\\Desktop\\ProyectosBlazor\\MiPrimeraWeb\\MiWebBlazor\\MiWebBlazor.Shared\\obj\\",
+        "outputPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebBlazor\\MiProyectoBlazor\\MiWebBlazor\\MiWebBlazor.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

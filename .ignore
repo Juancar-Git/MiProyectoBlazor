@@ -1,0 +1,81 @@
+## .NET Core
+bin/
+obj/
+out/
+Generated\ Files/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Build results
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Azure
+.publish/
+*.azurePubxml
+
+# Rider
+.idea/
+*.sln.iml
+
+# npm
+node_modules/
+
+# Yarn
+.yarn/
+.yarnrc.yml
+.pnp.*
+.pnp
+
+# Environment and secrets
+.env
+.env.*
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*~
+
+# Blazor WebAssembly specific
+wwwroot/dist/
+wwwroot/node_modules/
+wwwroot/**/*.map
+
+# Dependency cache
+packages/
+.nuget/
+
+# Dotnet tools
+.dotnet/
+
+# Local configuration
+appsettings.Development.json
+appsettings.Local.json
